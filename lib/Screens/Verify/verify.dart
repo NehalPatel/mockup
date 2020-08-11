@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mockup/Screens/Welcome/welcome.dart';
+import 'package:mockup/Screens/Home/home_screen.dart';
 
 class VerifyPage extends StatefulWidget {
   @override
@@ -129,7 +129,7 @@ class _VerifyPageState extends State<VerifyPage> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) {
-                                      return WelcomeScreen();
+                                      return Home();
                                     },
                                   ),
                                 );
