@@ -6,7 +6,15 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Container(),
+      child: Scaffold(
+        appBar: AppBar(
+          brightness: Brightness.light,
+          title: Text('Home', style: TextStyle(color: Colors.black)),
+          iconTheme: IconThemeData(color: Colors.black),
+          elevation: 0,
+          backgroundColor: Colors.white,
+        ),
+      ),
     );
   }
 }

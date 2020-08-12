@@ -5,6 +5,7 @@ import 'package:mockup/Screens/Signup/signup_screen.dart';
 import 'package:mockup/components/rounded_button.dart';
 import 'package:mockup/constants.dart';
 
+import '../../../size_config.dart';
 import 'background.dart';
 
 class Body extends StatelessWidget {
@@ -19,7 +20,9 @@ class Body extends StatelessWidget {
           children: <Widget>[
             Text(
               "WELCOME TO URBANGATE",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: getProportionateScreenWidth(18)),
             ),
             SizedBox(height: size.height * 0.05),
             SvgPicture.asset(

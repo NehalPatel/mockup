@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mockup/size_config.dart';
 
+import '../../size_config.dart';
 import 'components/body.dart';
 
-class Verify extends StatelessWidget {
+class SplashScreen extends StatelessWidget {
+  static String routeName = "/spllash";
   @override
   Widget build(BuildContext context) {
+    // You have to call it on your starting screen
     SizeConfig().init(context);
 
     return Scaffold(
