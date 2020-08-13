@@ -126,9 +126,10 @@ class _BodyState extends State<Body> {
                 ),
                 Divider(),
                 ListTile(
-                  title: const Text('Request as Owner'),
+                  title: const Text('Request as Property Owner'),
                   leading: Radio(
                     value: requestAs.owner,
+                    activeColor: kPrimaryColor,
                     groupValue: _character,
                     onChanged: (requestAs value) {
                       setState(() {
@@ -141,6 +142,7 @@ class _BodyState extends State<Body> {
                   title: const Text('Request as Tanent'),
                   leading: Radio(
                     value: requestAs.tenant,
+                    activeColor: kPrimaryColor,
                     groupValue: _character,
                     onChanged: (requestAs value) {
                       setState(() {

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mockup/Screens/Splash/splash_screen.dart';
 
-import 'Screens/Selection/selection_screen.dart';
 import 'constants.dart';
 
 void main() {
@@ -16,15 +15,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Mockup Screens',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          textTheme: TextTheme(
-            bodyText1: TextStyle(color: kTextColor),
-            bodyText2: TextStyle(color: kTextColor),
-          ),),
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        textTheme: TextTheme(
+          bodyText1: TextStyle(color: kTextColor),
+          bodyText2: TextStyle(color: kTextColor),
+        ),
+      ),
       // home: WelcomeScreen(),
-      // home: SplashScreen(),
-      home: SelectionScreen(),
+      home: SplashScreen(),
+      // home: SelectionScreen(),
     );
   }
 }

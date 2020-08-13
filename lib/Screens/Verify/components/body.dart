@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mockup/Screens/Home/home_screen.dart';
+import 'package:mockup/Screens/Selection/selection_screen.dart';
 
 import '../../../constants.dart';
 import '../../../size_config.dart';
@@ -102,7 +102,7 @@ class _BodyState extends State<Body> {
                           context,
                           MaterialPageRoute(
                             builder: (context) {
-                              return Home();
+                              return SelectionScreen();
                             },
                           ),
                         );
