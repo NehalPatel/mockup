@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mockup/Screens/Splash/splash_screen.dart';
 
+import 'Screens/Selection/selection_screen.dart';
 import 'constants.dart';
 
 void main() {
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(
             bodyText1: TextStyle(color: kTextColor),
             bodyText2: TextStyle(color: kTextColor),
-          )),
+          ),),
       // home: WelcomeScreen(),
-      home: SplashScreen(),
+      // home: SplashScreen(),
+      home: SelectionScreen(),
     );
   }
 }
